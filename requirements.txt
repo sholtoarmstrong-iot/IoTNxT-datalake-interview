@@ -1,0 +1,8 @@
+# API
+fastapi>=0.79.0
+uvicorn[standard]>=0.18.3
+requests>=2.25.1
+# Configuration
+pydantic>=1.9.1
+# File Uploads
+python-multipart==0.0.6

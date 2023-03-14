@@ -1,0 +1,30 @@
+app:
+  title: "Datalake API"
+  description: "Unified API description"
+  version: "0.0.1"
+  terms_of_service: "http://example.com/terms/"
+  contact: {
+      "name": "Matrix team",
+      "url": "https://iotnxt.com",
+      "email": "example@iotnxt.com",
+  }
+  license_info: {
+      "name": "Apache 2.0",
+      "url": "https://example.com/licenses/LICENSE-2.0.html",
+  }
+  swagger_ui_oauth2_redirect_url: "/swaggerui/oauth2-redirect.html"
+  route_modules:
+    # This defines what apis to include and will create the necessary routes for the apis
+    - "lib.api:init_app"
+  docs_url: "/api/swagger"
+
+server:
+  reload: True 
+
+static_paths: []
+
+datalake: 
+  data_directory: "./data"
+  supported_types: ["csv", "json"]
+  timeseries_column: "entrytime"
+  key_column: "key"
