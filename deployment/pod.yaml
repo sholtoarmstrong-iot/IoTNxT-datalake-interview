@@ -1,2 +1,5 @@
-# TODO if you were tasked to deploy this as a kubernetes pod. What would you put in this file. 
+# TODO if you were tasked to deploy this as a kubernetes pod. What would you put in this file.
+# HINT: This should contain a kubernetes manifest file to deploy a standalone pod or a deployment for extra points 
 # NOTE: Assume the image is published to iotnxt.io/Datalake:latest
+# NOTE: Extra points awarded if you can persist the data stored in the datalake
+# NOTE: Extra points awarded if you can expose the endpoints
